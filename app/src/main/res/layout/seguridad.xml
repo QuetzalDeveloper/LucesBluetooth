@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/luces">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/salir"
+        android:src="@drawable/salir"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sensores magneticos"
+        android:gravity="center"
+        android:textColor="#fffbf2"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/salir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/encender"
+        android:background="@drawable/on"
+        android:layout_alignTop="@+id/off"
+        android:layout_alignLeft="@+id/salir"
+        android:layout_alignStart="@+id/salir"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/off"
+        android:background="@drawable/offrayo"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/salir"
+        android:layout_alignEnd="@+id/salir" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="       "
+        android:textColor="#fffbf2"
+        android:layout_below="@+id/off"
+        android:layout_toLeftOf="@+id/off"
+        android:layout_toStartOf="@+id/off"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cerca electrica"
+        android:textColor="#fffbf2"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cercaon"
+        android:src="@drawable/on"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/encender"
+        android:layout_alignStart="@+id/encender" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cercaoff"
+        android:src="@drawable/offrayo"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/cercaon"
+        android:layout_alignLeft="@+id/off"
+        android:layout_alignStart="@+id/off" />
+</RelativeLayout>
